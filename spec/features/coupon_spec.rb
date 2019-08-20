@@ -25,7 +25,7 @@ describe 'form page' do
   it 'new form submits content and renders form content' do
     visit new_coupon_path
 
-    fill_in 'coupon[coupon_code]', with: "YAYFREE"
+    #fill_in 'coupon[coupon_code]', with: "YAYFREE"
     fill_in 'coupon[store]', with: "Hobby Lobby"
 
     click_on "Submit Coupon"
@@ -36,7 +36,7 @@ describe 'form page' do
   it 'creates a record in the database' do
     visit new_coupon_path
 
-    fill_in 'coupon[coupon_code]', with: "FREEITEM"
+    #fill_in 'coupon[coupon_code]', with: "FREEITEM"
     fill_in 'coupon[store]', with: "Quip"
 
     click_on "Submit Coupon"
